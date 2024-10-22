@@ -2,7 +2,7 @@ import { Webhook } from "svix";
 import userModel from "./../models/userModel.js";
 
 // API controller function to mange clerk user with database
-// http://localhost:4000/api/user/webhooks
+// http://bg-removal-sigma.vercel.app/api/user/webhooks
 const clerkWebhooks = async (req, res) => {
   try {
     const whook = new Webhook(process.env.CLERK_WEBHOOK_SECRET);
